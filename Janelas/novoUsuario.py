@@ -11,11 +11,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(214, 184)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+class Ui_Cadastro(object):
+    def setupUi(self, Cadastro):
+        Cadastro.setObjectName("Cadastro")
+        Cadastro.resize(151, 131)
+        self.centralwidget = QtWidgets.QWidget(Cadastro)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
@@ -34,14 +34,14 @@ class Ui_MainWindow(object):
         self.Salvar = QtWidgets.QPushButton(self.centralwidget)
         self.Salvar.setObjectName("Salvar")
         self.gridLayout.addWidget(self.Salvar, 4, 0, 1, 1)
-        MainWindow.setCentralWidget(self.centralwidget)
+        Cadastro.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(Cadastro)
+        QtCore.QMetaObject.connectSlotsByName(Cadastro)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Cadastro):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "Usuario"))
-        self.label_2.setText(_translate("MainWindow", "Senha"))
-        self.Salvar.setText(_translate("MainWindow", "Salvar"))
+        Cadastro.setWindowTitle(_translate("Cadastro", "MainWindow"))
+        self.label.setText(_translate("Cadastro", "Usuário"))
+        self.label_2.setText(_translate("Cadastro", "Senha"))
+        self.Salvar.setText(_translate("Cadastro", "Salvar"))

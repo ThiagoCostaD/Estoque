@@ -11,33 +11,41 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(174, 122)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+class Ui_Acesso(object):
+    def setupUi(self, Acesso):
+        Acesso.setObjectName("Acesso")
+        Acesso.resize(174, 160)
+        self.centralwidget = QtWidgets.QWidget(Acesso)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
-        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit.setObjectName("lineEdit")
-        self.gridLayout.addWidget(self.lineEdit, 0, 0, 1, 1)
-        self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.gridLayout.addWidget(self.lineEdit_2, 1, 0, 1, 1)
+        self.Usuario = QtWidgets.QLineEdit(self.centralwidget)
+        self.Usuario.setObjectName("Usuario")
+        self.gridLayout.addWidget(self.Usuario, 1, 0, 1, 1)
+        self.Senha = QtWidgets.QLineEdit(self.centralwidget)
+        self.Senha.setObjectName("Senha")
+        self.gridLayout.addWidget(self.Senha, 3, 0, 1, 1)
+        self.BtNovoUsuario = QtWidgets.QPushButton(self.centralwidget)
+        self.BtNovoUsuario.setObjectName("BtNovoUsuario")
+        self.gridLayout.addWidget(self.BtNovoUsuario, 5, 0, 1, 1)
         self.buttonBox = QtWidgets.QDialogButtonBox(self.centralwidget)
         self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
-        self.gridLayout.addWidget(self.buttonBox, 2, 0, 1, 1)
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setObjectName("pushButton")
-        self.gridLayout.addWidget(self.pushButton, 3, 0, 1, 1)
-        MainWindow.setCentralWidget(self.centralwidget)
+        self.gridLayout.addWidget(self.buttonBox, 4, 0, 1, 1)
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 2, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        Acesso.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(Acesso)
+        QtCore.QMetaObject.connectSlotsByName(Acesso)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Acesso):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", "Novo Usuario"))
+        Acesso.setWindowTitle(_translate("Acesso", "MainWindow"))
+        self.BtNovoUsuario.setText(_translate("Acesso", "Novo usuário"))
+        self.label.setText(_translate("Acesso", "Usuário"))
+        self.label_2.setText(_translate("Acesso", "Senha"))

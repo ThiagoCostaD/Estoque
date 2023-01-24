@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Acesso</class>
+ <widget class="QMainWindow" name="Acesso">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>174</width>
-    <height>122</height>
+    <height>160</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,23 +15,37 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
     <item row="1" column="0">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="Usuario"/>
     </item>
-    <item row="2" column="0">
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="Senha"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="BtNovoUsuario">
+      <property name="text">
+       <string>Novo usuário</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
      <widget class="QDialogButtonBox" name="buttonBox">
       <property name="standardButtons">
        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
       </property>
      </widget>
     </item>
-    <item row="3" column="0">
-     <widget class="QPushButton" name="pushButton">
+    <item row="0" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="label">
       <property name="text">
-       <string>Novo Usuario</string>
+       <string>Usuário</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Senha</string>
       </property>
      </widget>
     </item>
