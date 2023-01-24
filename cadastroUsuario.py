@@ -1,19 +1,19 @@
 import sys
-from Janelas.janelaSenha import *
+from Janelas.novoUsuario import *
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 
-class SenhaMestre(QMainWindow, Ui_MainWindow):
+class CadastroUsuario(QMainWindow, Ui_MainWindow):
 
     def __init__(self, parent=None):
         super().__init__(parent)
         super().setupUi(self)
 
-    def senha(self, usuario, senha):
+    def usuario(self):
         pass
 
 
 if __name__ == '__main__':
     qt = QApplication(sys.argv)
-    senha = SenhaMestre()
-    senha.show()
+    cadastro = CadastroUsuario()
+    cadastro.show()
