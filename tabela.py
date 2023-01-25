@@ -1,9 +1,9 @@
 import sys
-from Janelas.novoUsuario import *
+from Janelas.janelaPrincipal import *
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 
-class Tabela(QMainWindow, Ui_Cadastro):
+class Tabela(QMainWindow, Ui_MainWindow):
 
     def __init__(self, parent=None):
         super().__init__(parent)
